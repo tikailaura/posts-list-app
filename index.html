@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posts List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="app-shell">
+      <header class="hero">
+        <p class="eyebrow">Project 2</p>
+        <h1>Posts List</h1>
+        <p class="hero-text">
+          Loads posts from an API with pagination and optional debounced search.
+        </p>
+      </header>
+
+      <section class="content-card">
+        <div class="toolbar">
+          <input
+            id="search-input"
+            class="search-input"
+            type="text"
+            placeholder="Search posts..."
+            autocomplete="off"
+          />
+        </div>
+
+        <div id="status" class="status" aria-live="polite"></div>
+        <div id="posts-container" class="posts-grid"></div>
+
+        <div class="actions">
+          <button id="load-more-btn" type="button">Load More</button>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
